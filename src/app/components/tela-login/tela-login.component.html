@@ -1,0 +1,41 @@
+<!--
+
+comando para instalar o font awesome
+npm install @fortawesome/angular-fontawesome @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons
+npm install @fortawesome/free-brands-svg-icons
+
+-->
+
+<div class="fullscreen">
+  <nav class="navbar">
+    <div class="nav-icons">
+      <a href=""><fa-icon [icon]="faInstagram"></fa-icon></a>
+      <a href=""><fa-icon [icon]="faLinkedin"></fa-icon></a>
+      <a href=""><fa-icon [icon]="faGithub"></fa-icon></a>
+    </div>
+  </nav>
+
+  <div class="split-container">
+    <div class="left-side">
+      <img src="/assets/images/login_left-side.png" alt="Left Side Img">
+    </div>
+    <div class="right-side">
+      <h1 style="color: #FFFFFF; font-family: 'Berlin Sans FB'">Bem-vindo à Lucky Wallet🍀</h1>
+      <p style="color: #FFFFFF; font-family: Calibri">Entre agora e comece a organizar suas Finanças!</p>
+      <div class="card">
+        <div class="form-login">
+          <label for="exampleFormControlInput1" class="form-label">Usuário</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu Usuário">
+          <label style="margin-top: 1vh" for="inputPassword5" class="form-label">Password</label>
+          <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Digite sua Senha">
+        </div>
+        <div class="submit-forget">
+          <button type="button" class="btn btn-primary">Entrar</button>
+          <a href="#"><p>Esqueci minha senha</p></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
