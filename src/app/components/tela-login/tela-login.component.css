@@ -51,8 +51,7 @@ fa-icon:hover {
 }
 
 .right-side {
-  background: rgb(25,25,112);
-  background: linear-gradient(309deg, rgba(25,25,112,1) 39%, rgba(25,25,112,0.8632703081232493) 67%);
+  background-color: #00469e;
   display: flex;
   align-items: center;
   flex-direction: column;
