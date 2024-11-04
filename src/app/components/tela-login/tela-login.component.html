@@ -1,17 +1,9 @@
-<!--
-
-comando para instalar o font awesome
-npm install @fortawesome/angular-fontawesome @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons
-npm install @fortawesome/free-brands-svg-icons
-
--->
-
 <div class="fullscreen">
   <nav class="navbar">
     <div class="nav-icons">
-      <a href=""><fa-icon [icon]="faInstagram"></fa-icon></a>
-      <a href=""><fa-icon [icon]="faLinkedin"></fa-icon></a>
-      <a href=""><fa-icon [icon]="faGithub"></fa-icon></a>
+      <a href="https://www.instagram.com/seliprinr" target="_blank"><fa-icon [icon]="faInstagram"></fa-icon></a>
+      <a href="https://www.linkedin.com/in/rseliprin" target="_blank"><fa-icon [icon]="faLinkedin"></fa-icon></a>
+      <a href="https://github.com/seliprinr" target="_blank"><fa-icon [icon]="faGithub"></fa-icon></a>
     </div>
   </nav>
 
@@ -20,22 +12,20 @@ npm install @fortawesome/free-brands-svg-icons
       <img src="/assets/images/login_left-side.png" alt="Left Side Img">
     </div>
     <div class="right-side">
-      <h1 style="color: #FFFFFF; font-family: 'Berlin Sans FB'">Bem-vindo à Lucky Wallet🍀</h1>
-      <p style="color: #FFFFFF; font-family: Calibri">Entre agora e comece a organizar suas Finanças!</p>
+      <h1 id="login-title">Bem-vindo à<br> Lucky Wallet🍀</h1>
+      <p id="login-subtitle">Entre agora e comece a organizar suas Finanças!</p>
       <div class="card">
-        <div class="form-login">
-          <label for="exampleFormControlInput1" class="form-label">Usuário</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu Usuário">
-          <label style="margin-top: 1vh" for="inputPassword5" class="form-label">Password</label>
-          <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Digite sua Senha">
-        </div>
-        <div class="submit-forget">
-          <button type="button" class="btn btn-primary">Entrar</button>
-          <a href="#"><p>Esqueci minha senha</p></a>
-        </div>
-
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <div class="form-login">
+            <input type="text" formControlName="username" class="form-control" id="username" placeholder="Digite seu Usuário">
+            <input type="password" formControlName="password" id="password" class="form-control" placeholder="Digite sua Senha">
+          </div>
+          <div class="submit-forget">
+            <button type="submit" class="btn btn-primary">Entrar</button>
+            <a style="font-size: small" [routerLink]="'/tela-recuperar-senha'">Esqueci minha senha</a>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 </div>
-

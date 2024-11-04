@@ -1,0 +1,152 @@
+.fullscreen {
+  position: relative;
+  background-color: #00469e;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.back-arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.back-arrow:hover {
+  color: #ccc;
+}
+
+.card-recover {
+  width: 100%;
+  max-width: 500px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+.card-texts .forgot-password {
+  font-size: 18px;
+  color: #00469e;
+  margin-bottom: 10px;
+}
+
+.recover-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00469e;
+  margin-bottom: 20px;
+}
+
+.card-content .instructions {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Campo de Email */
+.mb-3 {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.form-control:focus {
+  border-color: #00469e;
+  box-shadow: 0 0 8px rgba(0, 70, 158, 0.2);
+  outline: none;
+}
+
+/* Botão de Envio */
+.btn-recover {
+  background-color: #00469e;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100%;
+  max-width: 200px;
+  margin-top: 20px;
+}
+
+.btn-recover:hover {
+  background-color: #003580;
+  transform: translateY(-2px);
+}
+
+.btn-recover:active {
+  background-color: #002b66;
+  transform: translateY(0);
+}
+
+/* Pop-up de Validação */
+.popup {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.popup.success {
+  background-color: #28a745; /* Verde para sucesso */
+}
+
+.popup.error {
+  background-color: #dc3545; /* Vermelho para erro */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  .card-recover {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .recover-title {
+    font-size: 22px;
+  }
+
+  .form-control,
+  .btn-recover {
+    font-size: 14px;
+  }
+}

@@ -1,10 +1,11 @@
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {NgModule} from "@angular/core";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   imports: [
     FontAwesomeModule,
-    // outros imports...
+    RouterModule
   ],
 })
 export class AppModule {}

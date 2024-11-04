@@ -1,0 +1,24 @@
+<div class="fullscreen">
+  <div class="back-arrow">
+    <fa-icon [icon]="faArrowLeft" (click)="goToHome()"></fa-icon>
+  </div>
+  <div class="card-recover">
+    <div class="card-texts">
+      <p class="forgot-password">Esqueceu sua senha?</p>
+      <h1 class="recover-title">SORTE sua que enviaremos uma nova senha🍀</h1>
+    </div>
+    <div class="card-content">
+      <p class="instructions">Preencha os campos abaixo</p>
+      <div class="mb-3">
+        <label for="emailInput" class="form-label">Digite seu email</label>
+        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" [(ngModel)]="email">
+      </div>
+      <button type="button" class="btn-recover" (click)="validateEmail()">Enviar</button>
+    </div>
+  </div>
+
+  <!-- Pop-up de Validação -->
+  <div *ngIf="validationMessage" class="popup" [ngClass]="{ 'success': isValidEmail, 'error': !isValidEmail }">
+    <p>{{ validationMessage }}</p>
+  </div>
+</div>
