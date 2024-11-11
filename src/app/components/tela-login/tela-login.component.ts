@@ -35,7 +35,7 @@ export class TelaLoginComponent {
         text: 'Bem-vindo!',
         confirmButtonText: 'Continuar'
       }).then(() => {
-        this.router.navigate(['/tela-usuario']);
+        this.router.navigate(['/tela-usuario/gastos-mensais']);
       });
     } else {
       Swal.fire({

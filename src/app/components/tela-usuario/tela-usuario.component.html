@@ -5,7 +5,7 @@
     </div>
     <div class="user-info">
       <img src="/assets/images/user_photo.jpg" alt="User Photo">
-      <p>Seja bem-vindo, Rodrigo Seliprin</p>
+      <p>Seja bem-vindo, Rodrigo!</p>
       <a href="#" class="logout">Sair</a>
     </div>
   </div>
@@ -14,20 +14,18 @@
 
   <div class="container-user">
     <div class="panel">
-      <!-- Painel de opções com botões do Bootstrap -->
       <div class="btn-group-vertical w-100" role="group" aria-label="Opções">
-        <button type="button" class="btn btn-light btn-option">Opção 1</button>
-        <button type="button" class="btn btn-light btn-option">Opção 2</button>
-        <button type="button" class="btn btn-light btn-option">Opção 3</button>
+        <button type="button" class="btn btn-light btn-option" (click)="navegarPara('gastos-mensais')">Gastos Mensais</button>
+        <button type="button" class="btn btn-light btn-option" (click)="navegarPara('carteira-digital')">Carteira Digital</button>
+        <button type="button" class="btn btn-light btn-option" (click)="navegarPara('cotacao-atual')">Cotação Atual</button>
       </div>
 
-      <!-- Texto de direitos autorais -->
       <footer class="footer">
-        Seliprin - Todos os direitos reservados
+        © Seliprin - Todos os direitos reservados.
       </footer>
     </div>
+
     <div class="main-app">
-      <!-- Conteúdo principal aqui -->
-      <p>Conteúdo principal</p>
+      <router-outlet></router-outlet>
     </div>
   </div>
