@@ -1,7 +1,7 @@
 <div class="planilha-container">
   <h2>Planilha de Gastos Novembro</h2>
 
-  <button type="button" class="btn btn-primary" (click)="abrirModal()">Adicionar</button>
+  <button type="button" class="btn" style="background-color: #00D476; font-weight: bold" (click)="abrirModal()">Adicionar</button>
 
   <div class="modal" [ngClass]="{'modal-show': modalAberto}">
     <div class="modal-content">
@@ -23,8 +23,7 @@
           <input type="number" class="form-control" [(ngModel)]="valor" placeholder="Valor" min="0">
         </div>
 
-        <!-- Substituir por adicionarOuEditarGasto -->
-        <button type="button" class="btn btn-primary" (click)="adicionarOuEditarGasto()">Adicionar</button>
+        <button type="button" class="btn" (click)="adicionarOuEditarGasto()">Adicionar</button>
       </div>
     </div>
   </div>
@@ -46,14 +45,13 @@
         <td>{{ getCategoria(gasto.categoria) }}</td>
         <td>{{ gasto.valor | currency:'BRL' }}</td>
         <td>
-          <button (click)="editarGasto(gasto)">Editar</button>
-          <button (click)="excluirGasto(gasto)">Excluir</button>
+          <button style="background-color: #4169E1;" (click)="editarGasto(gasto)">Editar</button>
+          <button style="background-color: #FF0000FF;" (click)="excluirGasto(gasto)">Excluir</button>
         </td>
       </tr>
       </tbody>
     </table>
 
-    <!-- Total de Gastos -->
     <div class="total">
       <strong>Total: {{ totalGastos | currency:'BRL' }}</strong>
     </div>

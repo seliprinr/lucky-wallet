@@ -1,12 +1,12 @@
 /* Container principal */
 .planilha-container {
   width: 100%;
+  height: 80vh;
   max-width: 900px;
   margin: 0 auto;
+  margin-top: 5vh;
   padding: 2rem;
   font-family: 'Roboto', sans-serif;
-  color: #333;
-  background-color: #f9f9f9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
@@ -15,7 +15,7 @@
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #4a90e2;
+  color: rgb(0, 245, 140);
   font-weight: bold;
 }
 
@@ -85,8 +85,6 @@
 
 .form-gastos .input-group .input-group-text {
   padding: 0.8rem;
-  background-color: #e9ecef;
-  border: 1px solid #ccc;
   border-radius: 6px 0 0 6px;
   color: #4caf50;
 }
@@ -97,21 +95,20 @@
   padding: 0.8rem;
   font-size: 1rem;
   color: #fff;
-  background-color: #4a90e2;
+  background-color: rgb(0, 245, 140);
   border: none;
   border-radius: 6px;
   transition: background-color 0.3s ease;
 }
 
 .form-gastos .btn:hover {
-  background-color: #357abd;
+  background-color: #00D476;
 }
 
 /* Lista de Gastos */
 .gastos-list {
   margin-top: 2rem;
   overflow-x: auto;
-  background: white;
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -119,8 +116,8 @@
 .gastos-list h1 {
   font-size: 1.25rem;
   padding: 1rem;
-  background-color: #f1f1f1;
-  color: #111111;
+  font-weight: bold;
+  color: #FFFFFF;
   border-radius: 8px 8px 0 0;
   text-align: center;
 }
@@ -138,13 +135,17 @@
 }
 
 .gastos-list th {
-  background-color: #0d6efd;
+  background-color: #00D476;
   color: #FFFFFF;
   font-weight: 600;
 }
 
 .gastos-list td {
   border-bottom: 1px solid #ddd;
+}
+
+.gastos-list tr {
+  color: #FFFFFF;
 }
 
 /* Ações de Botões */
@@ -159,7 +160,6 @@
   margin: 0.2rem 0.2rem;
   border: none;
   border-radius: 6px;
-  background-color: #ff6347;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -167,7 +167,7 @@
 }
 
 .gastos-list button:hover {
-  background-color: #e53e3e;
+  opacity: 60%;
 }
 
 /* Total */
@@ -175,19 +175,19 @@
   padding: 1rem;
   font-size: 1.0rem;
   text-align: right;
-  background-color: #f1f1f1;
   border-radius: 0 0 8px 8px;
-  color: #333;
+  color: #FFFFFF;
 }
 
 /* Responsividade */
 @media (max-width: 600px) {
   .planilha-container {
     padding: 1rem;
+    height: 606px;
   }
 
   .form-gastos .btn, .gastos-list button {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
 
   .modal-content {
@@ -208,7 +208,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.8rem; /* Reduzido para melhor ajuste */
-    border-radius: 50%;
+    font-size: 10px; /* Reduzido para melhor ajuste */
+    border-radius: 10%;
   }
 }
