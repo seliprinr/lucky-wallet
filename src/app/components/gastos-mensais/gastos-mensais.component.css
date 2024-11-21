@@ -1,14 +1,10 @@
 /* Container principal */
-.planilha-container {
-  width: 100%;
+.planilha-container {;
   height: 80vh;
   max-width: 900px;
   margin: 0 auto;
-  margin-top: 5vh;
-  padding: 2rem;
+  margin-top: 8vh;
   font-family: 'Roboto', sans-serif;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
 }
 
 .planilha-container h2 {
@@ -43,7 +39,7 @@
   border-radius: 8px;
   width: 90%;
   max-width: 500px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .close {
@@ -69,8 +65,6 @@
 .form-gastos select,
 .form-gastos .input-group input {
   padding: 0.8rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
   font-size: 1rem;
 }
 
@@ -109,8 +103,6 @@
 .gastos-list {
   margin-top: 2rem;
   overflow-x: auto;
-  border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .gastos-list h1 {
@@ -130,7 +122,7 @@
 .gastos-list th,
 .gastos-list td {
   padding: 0.75rem 1rem;
-  text-align: left;
+  text-align: center;
   font-size: 15px;
 }
 
@@ -159,11 +151,11 @@
   padding: 0.5rem 0.75rem;
   margin: 0.2rem 0.2rem;
   border: none;
-  border-radius: 6px;
+  border-radius: 50px;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-size: 0.875rem;
+  font-size: 0.6rem;
 }
 
 .gastos-list button:hover {
@@ -183,7 +175,7 @@
 @media (max-width: 600px) {
   .planilha-container {
     padding: 1rem;
-    height: 606px;
+    height: 65vh;
   }
 
   .form-gastos .btn, .gastos-list button {
@@ -192,6 +184,13 @@
 
   .modal-content {
     width: 90%;
+  }
+
+  .gastos-list th,
+  .gastos-list td {
+    padding: 0.60rem 0.8rem;
+    text-align: center;
+    font-size: 12px;
   }
 
   /* Ajustes para botões de ação em dispositivos móveis */

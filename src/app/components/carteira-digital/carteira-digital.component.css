@@ -1,0 +1,14 @@
+.carteira-digital {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+.card {
+  margin: 1rem;
+}

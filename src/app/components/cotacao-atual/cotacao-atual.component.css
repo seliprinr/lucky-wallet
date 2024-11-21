@@ -1,0 +1,29 @@
+.container-cotacao {
+  display: flex;
+  justify-content: center;
+  margin-top: 8vh;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(0, 245, 140);
+}
+
+td {
+  background-color: #f0f0f0;
+}
+
+.table {
+  background-color: rgba(255, 255, 255, 0.9); /* Transparência para destaque das informações */
+}
+
+/* Responsividade: Mostrar apenas Nome e Valor */
+@media (max-width: 768px) {
+  .table th:nth-child(2),
+  .table th:nth-child(4),
+  .table td:nth-child(2),
+  .table td:nth-child(4) {
+    display: none;
+  }
+}
